@@ -1,0 +1,48 @@
+.soc-network__list {
+    display: flex;
+    gap: 10px;
+}
+
+.container .soc-network {
+    margin-left: 70px;
+
+}
+
+.soc-network__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+
+.soc-network__list .soc-network__link:hover,
+.soc-network__list .soc-network__link:focus {
+    background-color: var(--accent-color);
+}
+
+.soc-network__list .soc-network__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-network__icon {
+    display: flex;
+    fill: #ffffff;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

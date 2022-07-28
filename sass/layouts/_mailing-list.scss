@@ -1,0 +1,70 @@
+.mailing-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.mailing {
+    margin-left: 93px;
+}
+
+.mailing-list {
+    min-width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: #2F303A;
+    padding-left: 16px;
+    color: #757575;
+
+}
+
+.mailing-list::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.mailing-meil {
+    display: flex;
+}
+
+.button-mailing-icon {
+    fill: #ffffff;
+    position: absolute;
+    right: 10%;
+
+
+}
+
+.mailing-button {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-right: 28px;
+    margin-left: 12px;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailing-button:hover,
+.mailing-button:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

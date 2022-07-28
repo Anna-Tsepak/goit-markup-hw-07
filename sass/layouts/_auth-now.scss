@@ -1,0 +1,40 @@
+.auth-nov {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nov .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.link-auth-now {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item .link-auth-now:hover,
+.item .link-auth-now:focus,
+.link-auth-now:hover .icon-contacts,
+.link-auth-now:focus .icon-contacts {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.icon-contacts {
+    display: flex;
+    fill: #757575;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
