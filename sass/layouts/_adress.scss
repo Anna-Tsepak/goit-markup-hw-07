@@ -1,13 +1,9 @@
 .link,
 .contact-link {
 	text-decoration: none;
-	font-size: 14px;
-	line-height: 2;
-	letter-spacing: 0.03em;
-	margin-top: 9px;
-	transition: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+	@include fons (14px, none, 2, 0.03em);
+	@include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
+	
 	.address .address-link:hover & {
 		color: var(--accent-color);
 	}

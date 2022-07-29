@@ -7,10 +7,7 @@
 
 .comanda__people {
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
+  @include fons (16px, 500, 1.18, 0.03em);
   margin-bottom: 0px;
   text-align: center;
   margin-top: 0px;
@@ -30,9 +27,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 .comanda__job {
   color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
+  @include fons (16px, none, 1.18, 0.03em);
   margin-top: 10px;
   text-align: center;
   margin-bottom: 0px;
@@ -56,8 +51,7 @@ justify-content: center;
 border-radius: 50%;
 padding: 12px;
 background-color:#FFFFFF;
-transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
   &:hover,
   &:focus {
@@ -70,8 +64,7 @@ transition: 250ms;
   fill: #AFB1B8;
   justify-content: center;
   align-items: center;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition (250ms, cubic-bezier(0.4, 0, 0.2, 1));
   .social-network .social-network__link:focus &,
   .social-network .social-network__link:hover & {
     fill: #FFFFFF;
