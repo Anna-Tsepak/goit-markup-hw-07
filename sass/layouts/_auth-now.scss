@@ -1,11 +1,11 @@
 .auth-nov {
     display: flex;
     margin-left: auto;
+    &.item:not(:last-child) {
+            margin-right: 50px;
+        }
 }
 
-.auth-nov .item:not(:last-child) {
-    margin-right: 50px;
-}
 
 .link-auth-now {
     text-decoration: none;
@@ -19,16 +19,13 @@
     align-items: center;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.item .link-auth-now:hover,
-.item .link-auth-now:focus,
-.link-auth-now:hover .icon-contacts,
-.link-auth-now:focus .icon-contacts {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    .item &:hover,
+    .item &:focus{
+        color: var(--accent-color);
+            fill: var(--accent-color);
+            }
 }
-
 .icon-contacts {
     display: flex;
     fill: #757575;
@@ -37,4 +34,9 @@
     align-items: center;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .link-auth-now:hover &,
+        .link-auth-now:focus & {
+            color: var(--accent-color);
+            fill: var(--accent-color);
+        }
 }

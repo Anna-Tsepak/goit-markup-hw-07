@@ -5,14 +5,10 @@
 .marketing__list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.marketing__list .marketing__item {
-  margin-right: 30px;
-  width: 270px;
-}
-.marketing__list .marketing__item:nth-child(4n) {
-  margin-right: 0px;
+  &.marketing__item {
+      gap: 30px;
+      width: 270px;
+    }
 }
 
 .marketing__image {

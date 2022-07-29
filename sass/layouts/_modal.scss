@@ -45,8 +45,10 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus .icon-modal {
+            fill: var(--accent-color);
+        }
 }
-
 
 .modal-batton {
     position: absolute;
@@ -55,13 +57,7 @@
     padding: 0px;
     right: 8px;
     top: 8px;
-
 }
-
-.modal-batton:focus .icon-modal {
-    fill: var(--accent-color);
-}
-
 
 .modal-title {
     font-weight: 700;
@@ -88,15 +84,11 @@
     padding-left: 42px;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+            border: 1px solid var(--accent-color);
+        }
 }
 
-.input-modal:focus {
-    border: 1px solid var(--accent-color);
-}
-
-.input-modal:focus+.input-icon {
-    fill: var(--accent-color);
-}
 
 .input-icon {
     position: absolute;
@@ -105,6 +97,9 @@
     transform: translateY(-50%);
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .input-modal:focus+& {
+            fill: var(--accent-color);
+        }
 
 }
 
@@ -122,20 +117,16 @@
     outline: none;
     resize: none;
     color: #757575;
-
-}
-
-.input-text:focus {
+    &:focus {
     border: 1px solid var(--accent-color);
-
+    &:placeholder {
+            color: rgba(117, 117, 117, 0.5);
+            font-size: 12px;
+            line-height: 1.1px;
+            letter-spacing: 0.01em;
+            padding-top: 12px;
+        }
 }
-
-.input-text::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-    font-size: 12px;
-    line-height: 1.1px;
-    letter-spacing: 0.01em;
-    padding-top: 12px;
 
 }
 
@@ -149,6 +140,13 @@
     margin-right: 7px;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .input-check:checked+.check-text & {
+            fill: #FFFFFF;
+            .input-check:checked+.check-text> & {
+                    background-color: #2196f3;
+                    border: transparent;
+                }
+        }
 }
 
 .check-text {
@@ -170,15 +168,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-check:checked+.check-text>.icon-vector {
-    background-color: #2196f3;
-    border: transparent;
-}
-
-.input-check:checked+.check-text svg {
-    fill: #FFFFFF;
-}
-
 .button-sent {
     display: block;
     width: 200px;
@@ -197,10 +186,9 @@
     margin: auto;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-sent:focus {
+    &:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 }
 
 .acsept-text {
@@ -209,9 +197,10 @@
     letter-spacing: 0.03em;
     color: #757575;
     margin: auto;
+    
 }
 
-.acsept-text span {
+.contract {
     color: #2196F3;
     text-decoration: underline;
 }

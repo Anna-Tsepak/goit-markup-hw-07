@@ -20,8 +20,13 @@
   padding-top: 30px;
   padding-bottom: 30px;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+&.social-network {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    gap: 10px;
+  }
 }
-
 
 .comanda__job {
   color: var(--primary-text-color);
@@ -35,31 +40,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 .comanda__list{
 display: flex;
-}
-.comanda__list .comanda__paragraph {
-  margin-right: 30px;
-}
-.comanda__list .comanda__paragraph:nth-child(4n) {
-  margin-right: 0px;
-}
-.comanda__title .social-network {
-    display: flex;
-    margin-top: 16px;
-    justify-content: center;
-    gap: 10px;
+ &.comanda__paragraph {
+    gap: 30px;
+  }
 }
 
-.social-network .social-network__link:hover,
-.social-network .social-network__link:focus
- {
-   background-color: var(--accent-color);
-} 
-
-.social-network .social-network__link:focus .social-network__icon,
-.social-network .social-network__link:hover .social-network__icon
-{fill: #FFFFFF;
-  
-}
 
 
 .social-network .social-network__link {
@@ -73,6 +58,11 @@ padding: 12px;
 background-color:#FFFFFF;
 transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+      background-color: var(--accent-color);
+    }
 }
 
 .social-network__icon{
@@ -82,4 +72,9 @@ transition: 250ms;
   align-items: center;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .social-network .social-network__link:focus &,
+  .social-network .social-network__link:hover & {
+    fill: #FFFFFF;
+
+  }
 }

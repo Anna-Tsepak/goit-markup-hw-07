@@ -3,7 +3,6 @@
     gap: 30px;
 
 }
-
 .regular-castomers__list .regular-castomers__link {
     display: flex;
     width: 170px;
@@ -14,18 +13,12 @@
     align-items: center;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.regular-castomers .regular-castomers__link:hover .regular-castomers__icon,
-.regular-castomers .regular-castomers__link:hover {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-.regular-castomers__list .regular-castomers__link:focus .regular-castomers__icon,
-.regular-castomers__list .regular-castomers__link:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
+    .regular-castomers &:hover {
+            fill: var(--accent-color);
+            border-color: var(--accent-color);
+           & :focus {
+                    fill: var(--accent-color);
+                    border-color: var(--accent-color)  }  }
 }
 
 .regular-castomers__icon {
@@ -33,4 +26,8 @@
     fill: #AFB1B8;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .regular-castomers .regular-castomers__link:hover &,
+    .regular-castomers .regular-castomers__link:hover & {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);}
 }

@@ -19,12 +19,6 @@
     margin-top: 0px;
 }
 
-
-.soc-network__list .soc-network__link:hover,
-.soc-network__list .soc-network__link:focus {
-    background-color: var(--accent-color);
-}
-
 .soc-network__list .soc-network__link {
     display: flex;
     width: 44px;
@@ -36,6 +30,10 @@
     background-color: rgba(255, 255, 255, 0.1);
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+        }
 }
 
 .soc-network__icon {
